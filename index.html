@@ -310,7 +310,7 @@ const electionDisplayMap = {
 
     // 선거 데이터 정의
     const elections = [
-        "교육감선거", "도지사선거", "시장선거",
+        "도지사선거", "교육감선거", "시장선거",
         "도의원선거(지역)", "시의원선거(지역)",
 		"도의원선거(비례)", "시의원선거(비례)"
     ];
@@ -885,7 +885,7 @@ function mapHtmlToExcel(ws, pollName) {
     if (startRow === null) return alert("투표구명을 찾을 수 없음");
 
     // 2. 선거명 매핑
-    const excelElections = ["교육감","도지사","의정부시장","도의원","시의원","도비례","시비례"];
+    const excelElections = ["도지사","교육감","의정부시장","도의원","시의원","도비례","시비례"];
     elections.forEach((htmlName, i) => {
 
 
